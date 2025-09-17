@@ -8,16 +8,16 @@ const Blog = () => {
       title: "Top 10 Universities in Canada for International Students",
       excerpt: "Discover the best Canadian universities that offer excellent programs and support for international students.",
       author: "Sarah Johnson",
-      date: "March 15, 2024",
+      date: "March 15, 2025",
       image: "https://images.pexels.com/photos/207692/pexels-photo-207692.jpeg?auto=compress&cs=tinysrgb&w=800",
       category: "Study Abroad"
     },
     {
       id: 2,
-      title: "Scholarship Opportunities for 2024: A Complete Guide",
+      title: "Scholarship Opportunities for 2025: A Complete Guide",
       excerpt: "Learn about various scholarship programs available for international students and how to apply successfully.",
       author: "Michael Chen",
-      date: "March 12, 2024",
+      date: "March 12, 2025",
       image: "https://images.pexels.com/photos/159844/cellular-education-classroom-159844.jpeg?auto=compress&cs=tinysrgb&w=800",
       category: "Scholarships"
     },
@@ -26,7 +26,7 @@ const Blog = () => {
       title: "Student Visa Requirements: What You Need to Know",
       excerpt: "A comprehensive guide to student visa requirements for popular study destinations.",
       author: "Emily Rodriguez",
-      date: "March 10, 2024",
+      date: "March 10, 2025",
       image: "https://images.pexels.com/photos/4145190/pexels-photo-4145190.jpeg?auto=compress&cs=tinysrgb&w=800",
       category: "Visa Guide"
     },
@@ -35,7 +35,7 @@ const Blog = () => {
       title: "Life as an International Student: Tips for Success",
       excerpt: "Essential tips and advice for international students to thrive in their new academic environment.",
       author: "David Kim",
-      date: "March 8, 2024",
+      date: "March 8, 2025",
       image: "https://images.pexels.com/photos/1438072/pexels-photo-1438072.jpeg?auto=compress&cs=tinysrgb&w=800",
       category: "Student Life"
     },
@@ -44,7 +44,7 @@ const Blog = () => {
       title: "IELTS vs TOEFL: Which Test Should You Take?",
       excerpt: "Compare IELTS and TOEFL exams to determine which English proficiency test is right for you.",
       author: "Lisa Wang",
-      date: "March 5, 2024",
+      date: "March 5, 2025",
       image: "https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=800",
       category: "Test Prep"
     },
@@ -53,7 +53,7 @@ const Blog = () => {
       title: "Budget Planning for International Students",
       excerpt: "Learn how to create and manage a budget while studying abroad to make the most of your finances.",
       author: "James Thompson",
-      date: "March 3, 2024",
+      date: "March 3, 2025",
       image: "https://images.pexels.com/photos/4386431/pexels-photo-4386431.jpeg?auto=compress&cs=tinysrgb&w=800",
       category: "Finance"
     }

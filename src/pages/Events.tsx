@@ -6,7 +6,7 @@ const Events = () => {
     {
       id: 1,
       title: "Study in Canada Information Session",
-      date: "March 25, 2024",
+      date: "March 25, 2025",
       time: "2:00 PM - 4:00 PM",
       location: "Virtual Event",
       attendees: 150,
@@ -17,8 +17,8 @@ const Events = () => {
     },
     {
       id: 2,
-      title: "UK University Fair 2024",
-      date: "April 2, 2024",
+      title: "UK University Fair 2025",
+      date: "April 2, 2025",
       time: "10:00 AM - 6:00 PM",
       location: "Convention Center, Downtown",
       attendees: 500,
@@ -30,7 +30,7 @@ const Events = () => {
     {
       id: 3,
       title: "IELTS Preparation Workshop",
-      date: "March 30, 2024",
+      date: "March 30, 2025",
       time: "1:00 PM - 5:00 PM",
       location: "Campuserve Office",
       attendees: 25,
@@ -42,7 +42,7 @@ const Events = () => {
     {
       id: 4,
       title: "Scholarship Application Masterclass",
-      date: "April 8, 2024",
+      date: "April 8, 2025",
       time: "3:00 PM - 5:00 PM",
       location: "Virtual Event",
       attendees: 200,
@@ -54,7 +54,7 @@ const Events = () => {
     {
       id: 5,
       title: "Australia Study Abroad Seminar",
-      date: "April 15, 2024",
+      date: "April 15, 2025",
       time: "11:00 AM - 1:00 PM",
       location: "Virtual Event",
       attendees: 100,
@@ -66,7 +66,7 @@ const Events = () => {
     {
       id: 6,
       title: "Student Visa Workshop",
-      date: "April 22, 2024",
+      date: "April 22, 2025",
       time: "2:00 PM - 4:00 PM",
       location: "Campuserve Office",
       attendees: 30,

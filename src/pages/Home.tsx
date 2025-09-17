@@ -312,7 +312,7 @@ const Home = () => {
             <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-green-600">
               <div className="flex items-center mb-4">
                 <Calendar className="h-6 w-6 text-green-600 mr-2" />
-                <span className="text-sm font-medium text-green-600">March 15, 2024</span>
+                <span className="text-sm font-medium text-green-600">March 15, 2025</span>
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">UK Universities Fair</h3>
               <p className="text-gray-600 mb-4">Meet representatives from top UK universities and learn about admission requirements.</p>
@@ -327,7 +327,7 @@ const Home = () => {
             <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-blue-600">
               <div className="flex items-center mb-4">
                 <Calendar className="h-6 w-6 text-blue-600 mr-2" />
-                <span className="text-sm font-medium text-blue-600">March 22, 2024</span>
+                <span className="text-sm font-medium text-blue-600">March 22, 2025</span>
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Scholarship Workshop</h3>
               <p className="text-gray-600 mb-4">Learn how to find and apply for scholarships to fund your international education.</p>
@@ -342,7 +342,7 @@ const Home = () => {
             <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-purple-600">
               <div className="flex items-center mb-4">
                 <Calendar className="h-6 w-6 text-purple-600 mr-2" />
-                <span className="text-sm font-medium text-purple-600">March 29, 2024</span>
+                <span className="text-sm font-medium text-purple-600">March 29, 2025</span>
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">IELTS Preparation Seminar</h3>
               <p className="text-gray-600 mb-4">Master the IELTS exam with expert tips and practice sessions.</p>
