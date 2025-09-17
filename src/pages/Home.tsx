@@ -86,11 +86,11 @@ const Home = () => {
       image: 'https://images.pexels.com/photos/290595/pexels-photo-290595.jpeg?auto=compress&cs=tinysrgb&w=800',
       universities: 'Park University, GVSU, Alabama State'
     },
-    {
-      country: 'Canada',
-      image: 'https://images.pexels.com/photos/87611/pexels-photo-87611.jpeg?auto=compress&cs=tinysrgb&w=800',
-      universities: 'University of Alberta, Saint Mary\'s'
-    },
+{
+  country: "Canada",
+  image: "https://images.pexels.com/photos/87611/pexels-photo-87611.jpeg?auto=compress&cs=tinysrgb&w=800",
+  universities: "University of Alberta, Saint Mary's"
+},
     {
       country: 'Australia',
       image: 'https://images.pexels.com/photos/995765/pexels-photo-995765.jpeg?auto=compress&cs=tinysrgb&w=800',

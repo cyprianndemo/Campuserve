@@ -22,13 +22,13 @@ const About = () => {
 
   const team = [
     {
-      name: 'Dr. James Mwangi',
+      name: 'Director Naomi Onyiego',
       position: 'Founder & CEO',
       image: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=300',
-      bio: 'Over 15 years of experience in international education consulting with a PhD in Educational Leadership.'
+      bio: 'Over 10 years of experience in international education consulting with a PhD in Educational Leadership.'
     },
     {
-      name: 'Sarah Kimani',
+      name: 'Eng. Cyprian Ndemo',
       position: 'Director of Student Services',
       image: 'https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=300',
       bio: 'Specialist in student counseling and support services with extensive knowledge of global education systems.'
@@ -57,7 +57,7 @@ const About = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section 
+      <section
         className="relative py-20 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://images.pexels.com/photos/1438081/pexels-photo-1438081.jpeg?auto=compress&cs=tinysrgb&w=1600)'
@@ -79,7 +79,7 @@ const About = () => {
               <Target className="h-12 w-12 text-green-600 mx-auto mb-4" />
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
               <p className="text-gray-600">
-                To empower African students and professionals to access global opportunities through education, 
+                To empower African students and professionals to access global opportunities through education,
                 guidance, and support, bridging the gap between local talent and international excellence.
               </p>
             </div>
@@ -87,7 +87,7 @@ const About = () => {
               <Eye className="h-12 w-12 text-blue-600 mx-auto mb-4" />
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Vision</h3>
               <p className="text-gray-600">
-                To become Africa's leading gateway to global education and opportunity, 
+                To become Africa's leading gateway to global education and opportunity,
                 creating a world where every talented individual can pursue their dreams without barriers.
               </p>
             </div>
@@ -95,7 +95,7 @@ const About = () => {
               <Globe2 className="h-12 w-12 text-purple-600 mx-auto mb-4" />
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Impact</h3>
               <p className="text-gray-600">
-                Since our establishment, we have successfully placed thousands of students in top universities worldwide, 
+                Since our establishment, we have successfully placed thousands of students in top universities worldwide,
                 contributing to Africa's global representation in higher education and professional development.
               </p>
             </div>
@@ -110,21 +110,21 @@ const About = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">Our Story</h2>
             <div className="text-lg text-gray-600 space-y-6">
               <p>
-                Founded with a passion for education and a vision for global opportunity, Campuserve Transnational Hub 
+                Founded with a passion for education and a vision for global opportunity, Campuserve Transnational Hub
                 began as a small consultancy with a big dream: to help African students access world-class education abroad.
               </p>
               <p>
-                Our founders recognized the immense talent within Africa and the barriers that prevented many bright minds 
-                from accessing international education opportunities. With combined decades of experience in education, 
+                Our founders recognized the immense talent within Africa and the barriers that prevented many bright minds
+                from accessing international education opportunities. With combined decades of experience in education,
                 immigration, and student services, they created Campuserve to bridge this gap.
               </p>
               <p>
-                Today, we are proud to have helped thousands of students achieve their dreams of studying at prestigious 
-                universities across the globe. Our success is measured not just in numbers, but in the transformed lives 
+                Today, we are proud to have helped thousands of students achieve their dreams of studying at prestigious
+                universities across the globe. Our success is measured not just in numbers, but in the transformed lives
                 and the positive impact our alumni are making in their communities and worldwide.
               </p>
               <p>
-                As we continue to grow, our commitment remains unchanged: to provide personalized, professional, and 
+                As we continue to grow, our commitment remains unchanged: to provide personalized, professional, and
                 comprehensive support to every student who entrusts us with their educational journey.
               </p>
             </div>
@@ -161,8 +161,8 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {team.map((member, index) => (
               <div key={index} className="text-center bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-200">
-                <img 
-                  src={member.image} 
+                <img
+                  src={member.image}
                   alt={member.name}
                   className="w-24 h-24 rounded-full object-cover mx-auto mb-4"
                 />
