@@ -339,13 +339,13 @@ const Testimonials = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="mailto:campuservetransnationalacademics@gmail.com"
+              href="mailto:campurserveducation@gmail.com"
               className="inline-flex items-center px-8 py-4 border-2 border-white text-lg font-medium rounded-md text-green-600 bg-white hover:bg-gray-100 transition-colors duration-200"
             >
               Start Your Journey Today
             </a>
             <a
-              href="mailto:campuservetransnationalacademics@gmail.com"
+              href="mailto:campurserveducation@gmail.com"
               className="inline-flex items-center px-8 py-4 border-2 border-white text-lg font-medium rounded-md text-white hover:bg-green-700 transition-colors duration-200"
             >
               Schedule a Consultation

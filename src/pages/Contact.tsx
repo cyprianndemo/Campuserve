@@ -118,7 +118,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900">Office Address</h3>
-                  <p className="text-gray-600">123 Education Street<br />Academic District<br />City, State 12345</p>
+                  <p className="text-gray-600">123 Education Street<br />Academic District<br />Nairobi, Kenya</p>
                 </div>
               </div>
 
