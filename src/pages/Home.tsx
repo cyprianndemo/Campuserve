@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { 
-  GraduationCap, 
-  Globe, 
-  FileText, 
-  DollarSign, 
-  Plane, 
-  Users, 
+import {
+  GraduationCap,
+  Globe,
+  FileText,
+  DollarSign,
+  Plane,
+  Users,
   ArrowRight,
   CheckCircle,
   Star,
@@ -86,11 +86,11 @@ const Home = () => {
       image: 'https://images.pexels.com/photos/290595/pexels-photo-290595.jpeg?auto=compress&cs=tinysrgb&w=800',
       universities: 'Park University, GVSU, Alabama State'
     },
-{
-  country: "Canada",
-  image: "https://images.pexels.com/photos/87611/pexels-photo-87611.jpeg?auto=compress&cs=tinysrgb&w=800",
-  universities: "University of Alberta, Saint Mary's"
-},
+    {
+      country: 'Canada',
+      image: 'https://images.pexels.com/photos/374870/pexels-photo-374870.jpeg?auto=compress&cs=tinysrgb&w=800',
+      universities: 'University of Alberta, Saint Mary\'s'
+    },
     {
       country: 'Australia',
       image: 'https://images.pexels.com/photos/995765/pexels-photo-995765.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -127,7 +127,7 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section 
+      <section
         className="relative min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.pexels.com/photos/1438081/pexels-photo-1438081.jpeg?auto=compress&cs=tinysrgb&w=1600)'
@@ -138,15 +138,14 @@ const Home = () => {
             Your Gateway to <span className="text-green-400">Global Education</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-            Trusted consultancy helping Africans study, work, and immigrate abroad. 
-            Empowering Africa's talent for a global tomorrow.
+            Trusted consultancy helping East African students, particularly Kenyan students, achieve their dreams of studying, working, and conducting business abroad. We provide comprehensive support and guidance to individuals seeking opportunities in premier destinations including the United States, Canada, the United Kingdom, Germany, Denmark, Australia, and many other countries.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/contact"
               className="inline-flex items-center px-8 py-4 border border-transparent text-lg font-medium rounded-md text-white bg-green-600 hover:bg-green-700 transition-all duration-200 transform hover:scale-105"
             >
-              Book a Free Consultation
+              Book Consultation
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
             <Link
@@ -163,10 +162,10 @@ const Home = () => {
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-            Empowering Africa's Talent for a Global Tomorrow
+            Empowering East Africa's Talent for a Global Tomorrow
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-8">
-            At Campuserve Transnational Hub, we bridge the gap between African talent and global opportunities. 
+            At Campuserve Transnational Hub, we bridge the gap between East Africa talent and global opportunities.
             Our mission is to empower students and professionals to access world-class education and career prospects abroad.
           </p>
           <Link
@@ -234,8 +233,8 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
             {destinations.map((destination, index) => (
               <div key={index} className="relative overflow-hidden rounded-lg shadow-lg group hover:shadow-xl transition-shadow duration-200">
-                <img 
-                  src={destination.image} 
+                <img
+                  src={destination.image}
                   alt={destination.country}
                   className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-200"
                 />
@@ -276,8 +275,8 @@ const Home = () => {
                 </div>
                 <p className="text-gray-600 mb-4 italic">"{testimonial.content}"</p>
                 <div className="flex items-center">
-                  <img 
-                    src={testimonial.image} 
+                  <img
+                    src={testimonial.image}
                     alt={testimonial.name}
                     className="w-12 h-12 rounded-full object-cover mr-4"
                   />

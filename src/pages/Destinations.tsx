@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { 
-  MapPin, 
-  GraduationCap, 
-  DollarSign, 
+import {
+  MapPin,
+  GraduationCap,
+  DollarSign,
   Clock,
   Users,
   Award,
@@ -80,7 +80,7 @@ const Destinations = () => {
     {
       country: 'Canada',
       flag: '🇨🇦',
-      image: 'https://images.pexels.com/photos/87611/pexels-photo-87611.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: 'https://images.pexels.com/photos/374870/pexels-photo-374870.jpeg?auto=compress&cs=tinysrgb&w=800',
       description: 'Welcoming country with high-quality education and excellent immigration pathways.',
       highlights: [
         'Pathway to permanent residency',
@@ -186,7 +186,7 @@ const Destinations = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section 
+      <section
         className="relative py-20 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://images.pexels.com/photos/1438081/pexels-photo-1438081.jpeg?auto=compress&cs=tinysrgb&w=1600)'
@@ -235,8 +235,8 @@ const Destinations = () => {
             {destinations.map((destination, index) => (
               <div key={index} className={`grid grid-cols-1 lg:grid-cols-2 gap-8 items-center ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}>
                 <div className={`${index % 2 === 1 ? 'lg:col-start-2' : ''}`}>
-                  <img 
-                    src={destination.image} 
+                  <img
+                    src={destination.image}
                     alt={destination.country}
                     className="w-full h-64 lg:h-80 object-cover rounded-lg shadow-lg"
                   />
@@ -247,7 +247,7 @@ const Destinations = () => {
                     <h2 className="text-3xl font-bold text-gray-900">{destination.country}</h2>
                   </div>
                   <p className="text-lg text-gray-600 mb-6">{destination.description}</p>
-                  
+
                   <div className="space-y-4">
                     <div>
                       <h3 className="font-semibold text-gray-900 mb-2">Why Choose {destination.country}?</h3>
@@ -260,7 +260,7 @@ const Destinations = () => {
                         ))}
                       </ul>
                     </div>
-                    
+
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
                       <div>
                         <div className="flex items-center mb-1">
@@ -396,7 +396,7 @@ const Destinations = () => {
               to="/contact"
               className="inline-flex items-center px-8 py-4 border-2 border-white text-lg font-medium rounded-md text-green-600 bg-white hover:bg-gray-100 transition-colors duration-200"
             >
-              Book Free Consultation
+              Book Consultation
             </Link>
             <Link
               to="/destinations"
