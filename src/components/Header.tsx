@@ -1,11 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import logo from '../images/logo.png';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [isScrolled, setIsScrolled] = React.useState(false);
+  const location = useLocation();
 
   // Handle scroll effect
   React.useEffect(() => {
@@ -28,6 +29,11 @@ const Header = () => {
     { name: 'Contact', path: '/contact' }
   ];
 
+  // Function to check if current path is active
+  const isActive = (path: string): boolean => {
+    return location.pathname === path;
+  };
+
   return (
     <>
       {/* Main Header */}
@@ -41,11 +47,10 @@ const Header = () => {
             <Link to="/" className="flex items-center space-x-3 group">
               <div className="relative">
                 <img
-  src={logo}
-  alt="Campuserve Logo"
-  className="h-16 w-16 transition-transform duration-200 group-hover:scale-110"
-/>
-
+                  src={logo}
+                  alt="Campuserve Logo"
+                  className="h-16 w-16 transition-transform duration-200 group-hover:scale-110"
+                />
                 <div className="absolute inset-0 bg-blue-600 rounded-full opacity-0 group-hover:opacity-10 transition-opacity duration-200"></div>
               </div>
               <div>
@@ -62,10 +67,20 @@ const Header = () => {
                 <Link
                   key={item.name}
                   to={item.path}
-                  className="relative px-4 py-2 text-gray-700 hover:text-blue-600 transition-all duration-200 rounded-lg hover:bg-blue-50 group"
+                  className={`relative px-4 py-2 transition-all duration-200 rounded-lg group ${
+                    isActive(item.path)
+                      ? 'text-blue-600 bg-blue-50 font-semibold'
+                      : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
+                  }`}
                 >
                   {item.name}
-                  <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-blue-600 transition-all duration-200 group-hover:w-3/4"></span>
+                  <span 
+                    className={`absolute bottom-0 left-1/2 transform -translate-x-1/2 h-0.5 bg-blue-600 transition-all duration-200 ${
+                      isActive(item.path)
+                        ? 'w-3/4'
+                        : 'w-0 group-hover:w-3/4'
+                    }`}
+                  ></span>
                 </Link>
               ))}
             </nav>
@@ -107,10 +122,23 @@ const Header = () => {
                     key={item.name}
                     to={item.path}
                     onClick={() => setIsMenuOpen(false)}
-                    className="px-4 py-3 text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition-all duration-200 rounded-lg flex items-center justify-between group"
+                    className={`px-4 py-3 transition-all duration-200 rounded-lg flex items-center justify-between group ${
+                      isActive(item.path)
+                        ? 'text-blue-600 bg-blue-50 font-semibold border-l-4 border-blue-600'
+                        : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
+                    }`}
                   >
                     {item.name}
-                    <svg className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg 
+                      className={`h-4 w-4 transition-opacity duration-200 ${
+                        isActive(item.path)
+                          ? 'opacity-100'
+                          : 'opacity-0 group-hover:opacity-100'
+                      }`} 
+                      fill="none" 
+                      stroke="currentColor" 
+                      viewBox="0 0 24 24"
+                    >
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
                   </Link>

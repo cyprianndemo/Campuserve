@@ -111,21 +111,28 @@ const About = () => {
             <div className="text-lg text-gray-600 space-y-6">
               <p>
                 Founded with a passion for education and a vision for global opportunity, Campuserve Transnational Hub
-                began as a small consultancy with a big dream: to help African students access world-class education abroad.
+                began as a specialized consultancy dedicated to helping East African students, particularly Kenyan students,
+                access world-class education abroad and fulfill their dreams of international success.
               </p>
               <p>
-                Our founders recognized the immense talent within Africa and the barriers that prevented many bright minds
-                from accessing international education opportunities. With combined decades of experience in education,
-                immigration, and student services, they created Campuserve to bridge this gap.
+                Our founders recognized the exceptional talent and academic potential within Kenya and the broader East African
+                region, while understanding the unique challenges that prevented many brilliant Kenyan minds from accessing
+                international education opportunities. With combined decades of experience in East African education systems,
+                immigration processes, and student services, they created Campuserve specifically to serve the Kenyan and
+                East African student community.
               </p>
               <p>
-                Today, we are proud to have helped thousands of students achieve their dreams of studying at prestigious
-                universities across the globe. Our success is measured not just in numbers, but in the transformed lives
-                and the positive impact our alumni are making in their communities and worldwide.
+                Today, we are proud to have helped thousands of Kenyan and East African students achieve their dreams of
+                studying at prestigious universities across the United States, Canada, United Kingdom, Germany, Denmark,
+                Australia, and other premier destinations. Our success is measured not just in numbers, but in the
+                transformed lives of Kenyan families and the positive impact our East African alumni are making in their
+                home countries and worldwide.
               </p>
               <p>
-                As we continue to grow, our commitment remains unchanged: to provide personalized, professional, and
-                comprehensive support to every student who entrusts us with their educational journey.
+                As we continue to expand across East Africa with our headquarters serving the Kenyan market, our commitment
+                remains unchanged: to provide culturally-aware, personalized, and comprehensive support to every Kenyan
+                and East African student who entrusts us with their international education journey, helping them become
+                global ambassadors for Kenya and East Africa.
               </p>
             </div>
           </div>

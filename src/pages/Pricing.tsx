@@ -331,7 +331,7 @@ const Pricing = () => {
               to="/contact"
               className="inline-flex items-center px-8 py-4 border-2 border-white text-lg font-medium rounded-md text-green-600 bg-white hover:bg-gray-100 transition-colors duration-200"
             >
-              Book Free Consultation
+              Book Consultation
             </Link>
             <Link
               to="/pricing"
