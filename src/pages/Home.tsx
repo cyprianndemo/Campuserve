@@ -373,7 +373,7 @@ const Home = () => {
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
             <a
-              href="https://wa.me/254727606568"
+              href="https://wa.me/254758220860"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-8 py-4 border-2 border-white text-lg font-medium rounded-md text-white hover:bg-green-700 transition-colors duration-200"

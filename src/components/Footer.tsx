@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Globe2, Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin, MessageCircle } from 'lucide-react';
+import logo from '../images/logo.png';
 
 const Footer = () => {
   return (
@@ -10,8 +11,11 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <Link to="/" className="flex items-center space-x-2 mb-4">
-              <Globe2 className="h-8 w-8 text-green-400" />
-              <div>
+              <img
+                src={logo}
+                alt="Campuserve Logo"
+                className="h-16 w-16 transition-transform duration-200 group-hover:scale-110"
+              />              <div>
                 <div className="text-xl font-bold">Campuserve</div>
                 <div className="text-sm text-green-400">Transnational Hub</div>
               </div>
@@ -19,7 +23,7 @@ const Footer = () => {
             <p className="text-gray-300 mb-4">
               Empowering African talent for a global tomorrow. Your trusted partner for international education and career opportunities.
             </p>
-            <div className="flex space-x-4">
+            {/* <div className="flex space-x-4">
               <a href="https://facebook.com/campuserve" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-green-400 transition-colors">
                 <Facebook className="h-5 w-5" />
               </a>
@@ -32,7 +36,7 @@ const Footer = () => {
               <a href="https://linkedin.com/company/campuserve" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-green-400 transition-colors">
                 <Linkedin className="h-5 w-5" />
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* Quick Links */}
@@ -66,7 +70,7 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center">
                 <Phone className="h-5 w-5 text-green-400 mr-2" />
-                <span className="text-gray-300">+254 727 606 568</span>
+                <span className="text-gray-300">+254 758 220 860</span>
               </div>
               <div className="flex items-center">
                 <Mail className="h-5 w-5 text-green-400 mr-2" />
@@ -80,7 +84,7 @@ const Footer = () => {
 
             {/* WhatsApp Button */}
             <a
-              href="https://wa.me/254727606568"
+              href="https://wa.me/254758220860"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center mt-4 px-4 py-2 bg-green-600 hover:bg-green-700 rounded-lg text-white font-medium transition-colors duration-200"
