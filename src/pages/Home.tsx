@@ -51,7 +51,7 @@ const Home = () => {
     {
       step: '01',
       title: 'Consultation',
-      description: 'Free initial consultation to understand your goals and preferences.'
+      description: 'Book your initial consultation for just KSh 500 to explore your goals and preferences'
     },
     {
       step: '02',
@@ -126,71 +126,75 @@ const Home = () => {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
+      {/* Enhanced Hero Section */}
       <section
         className="relative min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.pexels.com/photos/1438081/pexels-photo-1438081.jpeg?auto=compress&cs=tinysrgb&w=1600)'
+          backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=1600)',
+          backgroundPosition: 'center top'
         }}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Your Gateway to <span className="text-green-400">Global Education</span>
-          </h1>
-          <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-            Trusted consultancy helping East African students, particularly Kenyan students, achieve their dreams of studying, working, and conducting business abroad. We provide comprehensive support and guidance to individuals seeking opportunities in premier destinations including the United States, Canada, the United Kingdom, Germany, Denmark, Australia, and many other countries.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              to="/contact"
-              className="inline-flex items-center px-8 py-4 border border-transparent text-lg font-medium rounded-md text-white bg-green-600 hover:bg-green-700 transition-all duration-200 transform hover:scale-105"
-            >
-              Book Consultation
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Link>
-            <Link
-              to="/destinations"
-              className="inline-flex items-center px-8 py-4 border-2 border-white text-lg font-medium rounded-md text-white hover:bg-white hover:text-gray-900 transition-all duration-200 transform hover:scale-105"
-            >
-              Explore Destinations
-            </Link>
+          <div className="max-w-4xl mx-auto">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight">
+              Your Gateway to <span className="text-green-400">Global Education</span>
+            </h1>
+            <p className="text-xl md:text-2xl lg:text-3xl mb-12 max-w-3xl mx-auto leading-relaxed">
+              Trusted consultancy helping East African students, particularly Kenyan students, achieve their dreams of studying, working, and conducting business abroad.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+              <Link
+                to="/contact"
+                className="inline-flex items-center px-10 py-5 border border-transparent text-xl font-medium rounded-full text-white bg-green-600 hover:bg-green-700 transition-all duration-200 transform hover:scale-105 shadow-2xl"
+              >
+                Book Consultation
+              </Link>
+              <Link
+                to="/destinations"
+                className="inline-flex items-center px-10 py-5 border-2 border-white text-xl font-medium rounded-full text-white hover:bg-white hover:text-gray-900 transition-all duration-200 transform hover:scale-105"
+              >
+                Explore Destinations
+              </Link>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* About Preview */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-            Empowering East Africa's Talent for a Global Tomorrow
-          </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-8">
-            At Campuserve Transnational Hub, we bridge the gap between East Africa talent and global opportunities.
-            Our mission is to empower students and professionals to access world-class education and career prospects abroad.
-          </p>
-          <Link
-            to="/about"
-            className="inline-flex items-center text-green-600 hover:text-green-800 font-medium"
-          >
-            Learn More About Us
-            <ArrowRight className="ml-2 h-4 w-4" />
-          </Link>
+      {/* About Preview - Consistent with hero */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-4xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8">
+              Empowering East Africa's Talent for a Global Tomorrow
+            </h2>
+            <p className="text-xl md:text-2xl text-gray-600 mb-10 leading-relaxed">
+              At Campuserve Transnational Hub, we bridge the gap between East African talent and global opportunities.
+              Our mission is to empower students and professionals to access world-class education and career prospects abroad.
+            </p>
+            <Link
+              to="/about"
+              className="inline-flex items-center text-green-600 hover:text-green-800 font-semibold text-lg"
+            >
+              Learn More About Us
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Link>
+          </div>
         </div>
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-16">
+      <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Choose Campuserve?</h2>
-            <p className="text-lg text-gray-600">Comprehensive support for your international education journey</p>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Why Choose Campuserve?</h2>
+            <p className="text-xl text-gray-600">Comprehensive support for your international education journey</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {features.map((feature, index) => (
-              <div key={index} className="text-center p-6 rounded-lg bg-white shadow-lg hover:shadow-xl transition-shadow duration-200">
-                <div className="text-green-600 mb-4 flex justify-center">{feature.icon}</div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">{feature.title}</h3>
-                <p className="text-gray-600">{feature.description}</p>
+              <div key={index} className="text-center p-8 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                <div className="text-green-600 mb-6 flex justify-center">{feature.icon}</div>
+                <h3 className="text-2xl font-semibold text-gray-900 mb-4">{feature.title}</h3>
+                <p className="text-gray-600 leading-relaxed">{feature.description}</p>
               </div>
             ))}
           </div>
@@ -198,23 +202,23 @@ const Home = () => {
       </section>
 
       {/* How It Works */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">How It Works</h2>
-            <p className="text-lg text-gray-600">Your journey to international education in 5 simple steps</p>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">How It Works</h2>
+            <p className="text-xl text-gray-600">Your journey to international education in 5 simple steps</p>
           </div>
           <div className="relative">
             <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
               {processSteps.map((step, index) => (
                 <div key={index} className="text-center relative">
-                  <div className="bg-green-600 text-white rounded-full w-16 h-16 flex items-center justify-center text-xl font-bold mx-auto mb-4">
+                  <div className="bg-green-600 text-white rounded-full w-20 h-20 flex items-center justify-center text-2xl font-bold mx-auto mb-6 shadow-lg">
                     {step.step}
                   </div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">{step.title}</h3>
-                  <p className="text-gray-600 text-sm">{step.description}</p>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-4">{step.title}</h3>
+                  <p className="text-gray-600">{step.description}</p>
                   {index < processSteps.length - 1 && (
-                    <ArrowRight className="hidden md:block absolute top-8 -right-4 h-6 w-6 text-green-300" />
+                    <ArrowRight className="hidden md:block absolute top-10 -right-4 h-6 w-6 text-green-300" />
                   )}
                 </div>
               ))}
@@ -224,130 +228,130 @@ const Home = () => {
       </section>
 
       {/* Popular Destinations */}
-      <section className="py-16">
+      <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Popular Study Destinations</h2>
-            <p className="text-lg text-gray-600">Discover world-class universities across multiple countries</p>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Popular Study Destinations</h2>
+            <p className="text-xl text-gray-600">Discover world-class universities across multiple countries</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
             {destinations.map((destination, index) => (
-              <div key={index} className="relative overflow-hidden rounded-lg shadow-lg group hover:shadow-xl transition-shadow duration-200">
+              <div key={index} className="relative overflow-hidden rounded-xl shadow-lg group hover:shadow-2xl transition-shadow duration-300">
                 <img
                   src={destination.image}
                   alt={destination.country}
-                  className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-200"
+                  className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
-                <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
-                  <h3 className="text-lg font-bold mb-1">{destination.country}</h3>
+                <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                  <h3 className="text-xl font-bold mb-2">{destination.country}</h3>
                   <p className="text-sm opacity-90">{destination.universities}</p>
                 </div>
               </div>
             ))}
           </div>
-          <div className="text-center mt-8">
+          <div className="text-center mt-12">
             <Link
               to="/destinations"
-              className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-600 hover:bg-green-700 transition-colors duration-200"
+              className="inline-flex items-center px-8 py-4 border border-transparent text-lg font-medium rounded-full text-white bg-green-600 hover:bg-green-700 transition-colors duration-200"
             >
               View All Destinations
-              <ArrowRight className="ml-2 h-4 w-4" />
+              <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
           </div>
         </div>
       </section>
 
       {/* Testimonials */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Success Stories</h2>
-            <p className="text-lg text-gray-600">Hear from students who achieved their dreams with Campuserve</p>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Success Stories</h2>
+            <p className="text-xl text-gray-600">Hear from students who achieved their dreams with Campuserve</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             {testimonials.map((testimonial, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
-                <div className="flex items-center mb-4">
+              <div key={index} className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                <div className="flex items-center mb-6">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
                   ))}
                 </div>
-                <p className="text-gray-600 mb-4 italic">"{testimonial.content}"</p>
+                <p className="text-gray-600 mb-6 italic text-lg leading-relaxed">"{testimonial.content}"</p>
                 <div className="flex items-center">
                   <img
                     src={testimonial.image}
                     alt={testimonial.name}
-                    className="w-12 h-12 rounded-full object-cover mr-4"
+                    className="w-16 h-16 rounded-full object-cover mr-4"
                   />
                   <div>
-                    <h4 className="font-semibold text-gray-900">{testimonial.name}</h4>
-                    <p className="text-sm text-gray-600">{testimonial.destination}</p>
+                    <h4 className="font-semibold text-gray-900 text-lg">{testimonial.name}</h4>
+                    <p className="text-gray-600">{testimonial.destination}</p>
                   </div>
                 </div>
               </div>
             ))}
           </div>
-          <div className="text-center mt-8">
+          <div className="text-center mt-12">
             <Link
               to="/testimonials"
-              className="inline-flex items-center text-green-600 hover:text-green-800 font-medium"
+              className="inline-flex items-center text-green-600 hover:text-green-800 font-semibold text-lg"
             >
               Read More Success Stories
-              <ArrowRight className="ml-2 h-4 w-4" />
+              <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
           </div>
         </div>
       </section>
 
       {/* Upcoming Events */}
-      <section className="py-16">
+      <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Upcoming Events</h2>
-            <p className="text-lg text-gray-600">Join our education fairs and information sessions</p>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Upcoming Events</h2>
+            <p className="text-xl text-gray-600">Join our education fairs and information sessions</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-green-600">
-              <div className="flex items-center mb-4">
-                <Calendar className="h-6 w-6 text-green-600 mr-2" />
-                <span className="text-sm font-medium text-green-600">March 15, 2025</span>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div className="bg-white p-8 rounded-xl shadow-lg border-l-4 border-green-600 hover:shadow-2xl transition-shadow duration-300">
+              <div className="flex items-center mb-6">
+                <Calendar className="h-6 w-6 text-green-600 mr-3" />
+                <span className="font-medium text-green-600">March 15, 2025</span>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">UK Universities Fair</h3>
-              <p className="text-gray-600 mb-4">Meet representatives from top UK universities and learn about admission requirements.</p>
+              <h3 className="text-2xl font-semibold text-gray-900 mb-4">UK Universities Fair</h3>
+              <p className="text-gray-600 mb-6 leading-relaxed">Meet representatives from top UK universities and learn about admission requirements.</p>
               <Link
                 to="/events"
-                className="inline-flex items-center text-green-600 hover:text-green-800 font-medium"
+                className="inline-flex items-center text-green-600 hover:text-green-800 font-semibold"
               >
                 Register Now
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-blue-600">
-              <div className="flex items-center mb-4">
-                <Calendar className="h-6 w-6 text-blue-600 mr-2" />
-                <span className="text-sm font-medium text-blue-600">March 22, 2025</span>
+            <div className="bg-white p-8 rounded-xl shadow-lg border-l-4 border-blue-600 hover:shadow-2xl transition-shadow duration-300">
+              <div className="flex items-center mb-6">
+                <Calendar className="h-6 w-6 text-blue-600 mr-3" />
+                <span className="font-medium text-blue-600">March 22, 2025</span>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Scholarship Workshop</h3>
-              <p className="text-gray-600 mb-4">Learn how to find and apply for scholarships to fund your international education.</p>
+              <h3 className="text-2xl font-semibold text-gray-900 mb-4">Scholarship Workshop</h3>
+              <p className="text-gray-600 mb-6 leading-relaxed">Learn how to find and apply for scholarships to fund your international education.</p>
               <Link
                 to="/events"
-                className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium"
+                className="inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold"
               >
                 Register Now
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-purple-600">
-              <div className="flex items-center mb-4">
-                <Calendar className="h-6 w-6 text-purple-600 mr-2" />
-                <span className="text-sm font-medium text-purple-600">March 29, 2025</span>
+            <div className="bg-white p-8 rounded-xl shadow-lg border-l-4 border-purple-600 hover:shadow-2xl transition-shadow duration-300">
+              <div className="flex items-center mb-6">
+                <Calendar className="h-6 w-6 text-purple-600 mr-3" />
+                <span className="font-medium text-purple-600">March 29, 2025</span>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">IELTS Preparation Seminar</h3>
-              <p className="text-gray-600 mb-4">Master the IELTS exam with expert tips and practice sessions.</p>
+              <h3 className="text-2xl font-semibold text-gray-900 mb-4">IELTS Preparation Seminar</h3>
+              <p className="text-gray-600 mb-6 leading-relaxed">Master the IELTS exam with expert tips and practice sessions.</p>
               <Link
                 to="/events"
-                className="inline-flex items-center text-purple-600 hover:text-purple-800 font-medium"
+                className="inline-flex items-center text-purple-600 hover:text-purple-800 font-semibold"
               >
                 Register Now
                 <ArrowRight className="ml-2 h-4 w-4" />
@@ -358,25 +362,24 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-green-600 text-white">
+      <section className="py-20 bg-green-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Start Your Journey Today!</h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Take the first step towards your international education dreams. Book a free consultation with our experts.
+          <h2 className="text-4xl md:text-5xl font-bold mb-8">Start Your Journey Today!</h2>
+          <p className="text-2xl mb-12 max-w-3xl mx-auto leading-relaxed">
+            Take the first step towards your international education dreams. Book a consultation with our experts.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Link
               to="/contact"
-              className="inline-flex items-center px-8 py-4 border-2 border-white text-lg font-medium rounded-md text-green-600 bg-white hover:bg-gray-100 transition-colors duration-200"
+              className="inline-flex items-center px-10 py-5 border-2 border-white text-xl font-medium rounded-full text-green-600 bg-white hover:bg-gray-100 transition-colors duration-200"
             >
-              Book Free Consultation
-              <ArrowRight className="ml-2 h-5 w-5" />
+              Book Consultation
             </Link>
             <a
               href="https://wa.me/254758220860"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center px-8 py-4 border-2 border-white text-lg font-medium rounded-md text-white hover:bg-green-700 transition-colors duration-200"
+              className="inline-flex items-center px-10 py-5 border-2 border-white text-xl font-medium rounded-full text-white hover:bg-green-700 transition-colors duration-200"
             >
               WhatsApp Us Now
             </a>

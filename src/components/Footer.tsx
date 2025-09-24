@@ -4,18 +4,24 @@ import { Globe2, Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin, Me
 import logo from '../images/logo.png';
 
 const Footer = () => {
+  // Function to handle footer link clicks and scroll to top
+  const handleFooterLinkClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <Link to="/" className="flex items-center space-x-2 mb-4">
+            <Link to="/" className="flex items-center space-x-3 mb-6">
               <img
                 src={logo}
                 alt="Campuserve Logo"
-                className="h-16 w-16 transition-transform duration-200 group-hover:scale-110"
-              />              <div>
+                className="h-16 w-16 bg-white rounded-full p-1 transition-transform duration-200 group-hover:scale-110"
+              />              
+              <div>
                 <div className="text-xl font-bold">Campuserve</div>
                 <div className="text-sm text-green-400">Transnational Hub</div>
               </div>
@@ -23,44 +29,91 @@ const Footer = () => {
             <p className="text-gray-300 mb-4">
               Empowering African talent for a global tomorrow. Your trusted partner for international education and career opportunities.
             </p>
-            {/* <div className="flex space-x-4">
-              <a href="https://facebook.com/campuserve" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-green-400 transition-colors">
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a href="https://twitter.com/campuserve" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-green-400 transition-colors">
-                <Twitter className="h-5 w-5" />
-              </a>
-              <a href="https://instagram.com/campuserve" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-green-400 transition-colors">
-                <Instagram className="h-5 w-5" />
-              </a>
-              <a href="https://linkedin.com/company/campuserve" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-green-400 transition-colors">
-                <Linkedin className="h-5 w-5" />
-              </a>
-            </div> */}
           </div>
 
           {/* Quick Links */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><Link to="/about" className="text-gray-300 hover:text-green-400 transition-colors">About Us</Link></li>
-              <li><Link to="/services" className="text-gray-300 hover:text-green-400 transition-colors">Services</Link></li>
-              <li><Link to="/destinations" className="text-gray-300 hover:text-green-400 transition-colors">Study Destinations</Link></li>
-              <li><Link to="/pricing" className="text-gray-300 hover:text-green-400 transition-colors">Pricing</Link></li>
-              <li><Link to="/events" className="text-gray-300 hover:text-green-400 transition-colors">Events</Link></li>
-              <li><Link to="/blog" className="text-gray-300 hover:text-green-400 transition-colors">Resources</Link></li>
+              <li>
+                <Link 
+                  to="/about" 
+                  onClick={handleFooterLinkClick}
+                  className="text-gray-300 hover:text-green-400 transition-colors"
+                >
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  to="/services" 
+                  onClick={handleFooterLinkClick}
+                  className="text-gray-300 hover:text-green-400 transition-colors"
+                >
+                  Services
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  to="/destinations" 
+                  onClick={handleFooterLinkClick}
+                  className="text-gray-300 hover:text-green-400 transition-colors"
+                >
+                  Study Destinations
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  to="/contact" 
+                  onClick={handleFooterLinkClick}
+                  className="text-gray-300 hover:text-green-400 transition-colors"
+                >
+                  Contact Us
+                </Link>
+              </li>
             </ul>
           </div>
 
-          {/* Destinations */}
+          {/* Additional Pages - Moved from Navbar */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Popular Destinations</h3>
+            <h3 className="text-lg font-semibold mb-4">Resources</h3>
             <ul className="space-y-2">
-              <li><Link to="/destinations#uk" className="text-gray-300 hover:text-green-400 transition-colors">United Kingdom</Link></li>
-              <li><Link to="/destinations#usa" className="text-gray-300 hover:text-green-400 transition-colors">United States</Link></li>
-              <li><Link to="/destinations#canada" className="text-gray-300 hover:text-green-400 transition-colors">Canada</Link></li>
-              <li><Link to="/destinations#australia" className="text-gray-300 hover:text-green-400 transition-colors">Australia</Link></li>
-              <li><Link to="/destinations#germany" className="text-gray-300 hover:text-green-400 transition-colors">Germany</Link></li>
+              <li>
+                <Link 
+                  to="/pricing" 
+                  onClick={handleFooterLinkClick}
+                  className="text-gray-300 hover:text-green-400 transition-colors"
+                >
+                  Pricing
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  to="/events" 
+                  onClick={handleFooterLinkClick}
+                  className="text-gray-300 hover:text-green-400 transition-colors"
+                >
+                  Events
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  to="/testimonials" 
+                  onClick={handleFooterLinkClick}
+                  className="text-gray-300 hover:text-green-400 transition-colors"
+                >
+                  Testimonials
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  to="/blog" 
+                  onClick={handleFooterLinkClick}
+                  className="text-gray-300 hover:text-green-400 transition-colors"
+                >
+                  Blog
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -99,7 +152,6 @@ const Footer = () => {
           <p className="text-gray-300">
             © {new Date().getFullYear()} Campuserve Transnational Hub. All rights reserved.
           </p>
-
         </div>
       </div>
     </footer>
