@@ -79,7 +79,7 @@ const Header = () => {
                 <span className="text-2xl lg:text-3xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent leading-tight">
                   CAMPUSERVE
                 </span>
-                <p className="text-xs text-gray-500 leading-tight">Your Global Education Partner</p>
+                <p className="text-xs text-gray-500 leading-tight">Bringing your Global DREAM into Reality</p>
               </div>
             </Link>
 

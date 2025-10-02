@@ -23,7 +23,7 @@ const Home = () => {
     {
       icon: <Globe className="h-8 w-8" />,
       title: 'Multiple Study Destinations',
-      description: 'Access to top universities across UK, USA, Canada, Australia, and Germany.'
+      description: 'Access to top universities across UK, USA, Canada, Australia, and entire Europe.'
     },
     {
       icon: <FileText className="h-8 w-8" />,
