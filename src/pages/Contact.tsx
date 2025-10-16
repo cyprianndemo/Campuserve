@@ -99,8 +99,8 @@ const Contact = () => {
       <section 
         className="relative py-20 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=1600)',
-          backgroundPosition: 'center top'
+          backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=1600&q=80)',
+          backgroundPosition: 'center center'
         }}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
@@ -263,7 +263,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">Email</h3>
-                  <p className="text-gray-600 text-lg">campurserveducation@gmail.com</p>
+                  <p className="text-gray-600 text-lg">campuservetransnationalhub@gmail.com
+</p>
                 </div>
               </div>
 
