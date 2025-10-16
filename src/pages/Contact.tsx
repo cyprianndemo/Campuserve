@@ -243,7 +243,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">Office Address</h3>
-                  <p className="text-gray-600 text-lg">123 Education Street<br />Academic District<br />Nairobi, Kenya</p>
+                  <p className="text-gray-600 text-lg">Thika Road Mall<br />Roysambu<br />Nairobi, Kenya</p>
                 </div>
               </div>
 
