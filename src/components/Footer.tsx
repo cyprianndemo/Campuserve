@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Globe2, Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin, MessageCircle } from 'lucide-react';
-import logo from '../images/logo.png';
+import logo from '../images/logo.jpg';
 
 const Footer = () => {
   // Function to handle footer link clicks and scroll to top

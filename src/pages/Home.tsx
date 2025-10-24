@@ -27,7 +27,7 @@ const Home = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % heroImages.length);
-    }, 5000);
+    }, 4000);
 
     return () => clearInterval(timer);
   }, []);
