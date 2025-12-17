@@ -1,6 +1,9 @@
 import React from 'react';
 import { Calendar, Clock, MapPin, Users, ArrowRight } from 'lucide-react';
 
+import satSchedule from '../images/sat_schedule.jpg';
+import ukSmile from '../images/uk_smile.jpg';
+
 const Events = () => {
   const upcomingEvents = [
     {
@@ -23,7 +26,7 @@ const Events = () => {
       location: "Convention Center, Downtown",
       attendees: 500,
       description: "Meet representatives from 50+ UK universities and explore your study options.",
-      image: "https://images.pexels.com/photos/159844/cellular-education-classroom-159844.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: ukSmile,
       type: "In-Person",
       featured: true
     },
@@ -74,14 +77,26 @@ const Events = () => {
       image: "https://images.pexels.com/photos/4386431/pexels-photo-4386431.jpeg?auto=compress&cs=tinysrgb&w=800",
       type: "In-Person",
       featured: false
+    },
+    {
+      id: 7,
+      title: "SAT Weekend Classes",
+      date: "Every Weekend",
+      time: "Sat: 7am-3pm, Sun: 11am-5pm",
+      location: "Campuserve Training Center",
+      attendees: 20,
+      description: "SAT Weekend Classes. Saturday: Math 7-11am, English 12-3pm. Sunday: Math 11am-2pm, English 2pm-5pm. Prepare for success!",
+      image: satSchedule,
+      type: "In-Person",
+      featured: true
     }
   ];
 
   const [selectedType, setSelectedType] = React.useState("All");
   const eventTypes = ["All", "Virtual", "In-Person"];
 
-  const filteredEvents = selectedType === "All" 
-    ? upcomingEvents 
+  const filteredEvents = selectedType === "All"
+    ? upcomingEvents
     : upcomingEvents.filter(event => event.type === selectedType);
 
   const handleRegister = (eventTitle: string) => {
@@ -108,11 +123,10 @@ const Events = () => {
               <button
                 key={type}
                 onClick={() => setSelectedType(type)}
-                className={`px-6 py-2 rounded-full font-medium transition-colors ${
-                  selectedType === type
-                    ? 'bg-green-600 text-white'
-                    : 'bg-white text-gray-700 hover:bg-green-50 border border-gray-300'
-                }`}
+                className={`px-6 py-2 rounded-full font-medium transition-colors ${selectedType === type
+                  ? 'bg-green-600 text-white'
+                  : 'bg-white text-gray-700 hover:bg-green-50 border border-gray-300'
+                  }`}
               >
                 {type}
               </button>
@@ -129,15 +143,14 @@ const Events = () => {
                 <img
                   src={event.image}
                   alt={event.title}
-                  className="w-full h-48 object-cover"
+                  className="w-full h-full object-contain"
                 />
                 <div className="p-6">
                   <div className="flex items-center justify-between mb-4">
-                    <span className={`px-3 py-1 rounded-full text-sm font-medium ${
-                      event.type === 'Virtual' 
-                        ? 'bg-blue-100 text-blue-800' 
-                        : 'bg-green-100 text-green-800'
-                    }`}>
+                    <span className={`px-3 py-1 rounded-full text-sm font-medium ${event.type === 'Virtual'
+                      ? 'bg-blue-100 text-blue-800'
+                      : 'bg-green-100 text-green-800'
+                      }`}>
                       {event.type}
                     </span>
                     <div className="flex items-center text-gray-500 text-sm">
@@ -145,9 +158,9 @@ const Events = () => {
                       {event.attendees} registered
                     </div>
                   </div>
-                  
+
                   <h3 className="text-2xl font-bold text-gray-900 mb-3">{event.title}</h3>
-                  
+
                   <div className="space-y-2 mb-4">
                     <div className="flex items-center text-gray-600">
                       <Calendar className="h-4 w-4 mr-2" />
@@ -162,9 +175,9 @@ const Events = () => {
                       {event.location}
                     </div>
                   </div>
-                  
+
                   <p className="text-gray-600 mb-6">{event.description}</p>
-                  
+
                   <button
                     onClick={() => handleRegister(event.title)}
                     className="w-full bg-green-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-green-700 transition-colors flex items-center justify-center"
@@ -187,15 +200,14 @@ const Events = () => {
                 <img
                   src={event.image}
                   alt={event.title}
-                  className="w-full h-40 object-cover"
+                  className="w-full h-48 object-contain"
                 />
                 <div className="p-6">
                   <div className="flex items-center justify-between mb-3">
-                    <span className={`px-2.5 py-0.5 rounded-full text-xs font-medium ${
-                      event.type === 'Virtual' 
-                        ? 'bg-blue-100 text-blue-800' 
-                        : 'bg-green-100 text-green-800'
-                    }`}>
+                    <span className={`px-2.5 py-0.5 rounded-full text-xs font-medium ${event.type === 'Virtual'
+                      ? 'bg-blue-100 text-blue-800'
+                      : 'bg-green-100 text-green-800'
+                      }`}>
                       {event.type}
                     </span>
                     <div className="flex items-center text-gray-500 text-sm">
@@ -203,9 +215,9 @@ const Events = () => {
                       {event.attendees}
                     </div>
                   </div>
-                  
+
                   <h3 className="text-lg font-bold text-gray-900 mb-3 line-clamp-2">{event.title}</h3>
-                  
+
                   <div className="space-y-1 mb-4 text-sm">
                     <div className="flex items-center text-gray-600">
                       <Calendar className="h-3 w-3 mr-2" />
@@ -220,9 +232,9 @@ const Events = () => {
                       {event.location}
                     </div>
                   </div>
-                  
+
                   <p className="text-gray-600 text-sm mb-4 line-clamp-2">{event.description}</p>
-                  
+
                   <button
                     onClick={() => handleRegister(event.title)}
                     className="w-full bg-green-600 text-white py-2 px-4 rounded-lg font-medium hover:bg-green-700 transition-colors text-sm"

@@ -13,15 +13,29 @@ import {
   Calendar
 } from 'lucide-react';
 
+import wassceGirl from '../images/wassce_girl.jpg';
+import ukBoy from '../images/uk_boy.jpg';
+import ukSmile from '../images/uk_smile.jpg';
+import maltaPoster from '../images/malta_poster.jpg';
+import lithuaniaPoster from '../images/lithuania_poster.jpg';
+import koreaPoster from '../images/korea_poster.jpg';
+import scholarshipGeneral from '../images/scholarship_general.jpg';
+import spainPoster from '../images/spain_poster.jpg';
+import canadaPosterNew from '../images/canada_poster_new.jpg';
+
 const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const heroImages = [
-    'https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=1600',
-    'https://images.pexels.com/photos/1438072/pexels-photo-1438072.jpeg?auto=compress&cs=tinysrgb&w=1600',
-    'https://images.pexels.com/photos/1205651/pexels-photo-1205651.jpeg?auto=compress&cs=tinysrgb&w=1600',
-    'https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?auto=compress&cs=tinysrgb&w=1600',
-    'https://images.pexels.com/photos/256490/pexels-photo-256490.jpeg?auto=compress&cs=tinysrgb&w=1600'
+    scholarshipGeneral,
+    wassceGirl,
+    ukBoy,
+    ukSmile,
+    maltaPoster,
+    lithuaniaPoster,
+    koreaPoster,
+    spainPoster,
+    canadaPosterNew
   ];
 
   useEffect(() => {
@@ -154,9 +168,10 @@ const Home = () => {
             style={{
               opacity: currentSlide === index ? 1 : 0,
               backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${image})`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center top',
-              backgroundRepeat: 'no-repeat'
+              backgroundSize: 'contain',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat',
+              backgroundColor: '#f9fafb' // Light gray background
             }}
           />
         ))}
@@ -193,9 +208,8 @@ const Home = () => {
             <button
               key={index}
               onClick={() => setCurrentSlide(index)}
-              className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                currentSlide === index ? 'bg-white w-8' : 'bg-white/50'
-              }`}
+              className={`w-3 h-3 rounded-full transition-all duration-300 ${currentSlide === index ? 'bg-white w-8' : 'bg-white/50'
+                }`}
               aria-label={`Go to slide ${index + 1}`}
             />
           ))}

@@ -52,7 +52,7 @@ const Header = () => {
     <>
       {/* Mobile Menu Overlay */}
       {isMenuOpen && (
-        <div 
+        <div
           className="fixed inset-0 bg-black bg-opacity-50 z-40 lg:hidden"
           onClick={handleOverlayClick}
         />
@@ -60,8 +60,8 @@ const Header = () => {
 
       {/* Main Header */}
       <header className={`sticky top-0 z-50 transition-all duration-300 ${isScrolled
-          ? 'bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-100'
-          : 'bg-white shadow-md'
+        ? 'bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-100'
+        : 'bg-white shadow-md'
         }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
@@ -71,7 +71,7 @@ const Header = () => {
                 <img
                   src={logo}
                   alt="Campuserve Logo"
-                  className="h-20 w-20 transition-transform duration-200 group-hover:scale-110 bg-white rounded-full p-1"
+                  className="h-20 w-auto object-contain hover:scale-105 transition-transform duration-200 filter drop-shadow-md brightness-110 rounded-full"
                 />
                 <div className="absolute inset-0 bg-blue-600 rounded-full opacity-0 group-hover:opacity-10 transition-opacity duration-200"></div>
               </div>
@@ -88,19 +88,17 @@ const Header = () => {
                 <Link
                   key={item.name}
                   to={item.path}
-                  className={`relative px-6 py-3 transition-all duration-200 rounded-lg group ${
-                    isActive(item.path)
-                      ? 'text-blue-600 bg-blue-50 font-semibold'
-                      : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
-                  }`}
+                  className={`relative px-6 py-3 transition-all duration-200 rounded-lg group ${isActive(item.path)
+                    ? 'text-blue-600 bg-blue-50 font-semibold'
+                    : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
+                    }`}
                 >
                   {item.name}
-                  <span 
-                    className={`absolute bottom-0 left-1/2 transform -translate-x-1/2 h-0.5 bg-blue-600 transition-all duration-200 ${
-                      isActive(item.path)
-                        ? 'w-3/4'
-                        : 'w-0 group-hover:w-3/4'
-                    }`}
+                  <span
+                    className={`absolute bottom-0 left-1/2 transform -translate-x-1/2 h-0.5 bg-blue-600 transition-all duration-200 ${isActive(item.path)
+                      ? 'w-3/4'
+                      : 'w-0 group-hover:w-3/4'
+                      }`}
                   ></span>
                 </Link>
               ))}
@@ -131,9 +129,8 @@ const Header = () => {
           </div>
 
           {/* Mobile Navigation - Overlay style */}
-          <div className={`lg:hidden fixed top-0 left-0 w-full h-screen bg-white transition-transform duration-300 z-50 ${
-            isMenuOpen ? 'transform translate-x-0' : 'transform -translate-x-full'
-          }`}>
+          <div className={`lg:hidden fixed top-0 left-0 w-full h-screen bg-white transition-transform duration-300 z-50 ${isMenuOpen ? 'transform translate-x-0' : 'transform -translate-x-full'
+            }`}>
             {/* Mobile Header */}
             <div className="flex justify-between items-center p-6 border-b border-gray-100">
               <Link to="/" className="flex items-center space-x-3 group" onClick={() => setIsMenuOpen(false)}>
@@ -164,21 +161,19 @@ const Header = () => {
                     key={item.name}
                     to={item.path}
                     onClick={() => setIsMenuOpen(false)}
-                    className={`px-6 py-4 transition-all duration-200 rounded-lg flex items-center justify-between group ${
-                      isActive(item.path)
-                        ? 'text-blue-600 bg-blue-50 font-semibold border-l-4 border-blue-600'
-                        : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
-                    }`}
+                    className={`px-6 py-4 transition-all duration-200 rounded-lg flex items-center justify-between group ${isActive(item.path)
+                      ? 'text-blue-600 bg-blue-50 font-semibold border-l-4 border-blue-600'
+                      : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
+                      }`}
                   >
                     <span className="text-lg">{item.name}</span>
-                    <svg 
-                      className={`h-5 w-5 transition-opacity duration-200 ${
-                        isActive(item.path)
-                          ? 'opacity-100'
-                          : 'opacity-0 group-hover:opacity-100'
-                      }`} 
-                      fill="none" 
-                      stroke="currentColor" 
+                    <svg
+                      className={`h-5 w-5 transition-opacity duration-200 ${isActive(item.path)
+                        ? 'opacity-100'
+                        : 'opacity-0 group-hover:opacity-100'
+                        }`}
+                      fill="none"
+                      stroke="currentColor"
                       viewBox="0 0 24 24"
                     >
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

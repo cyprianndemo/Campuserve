@@ -9,20 +9,28 @@ import {
   Award,
   Globe
 } from 'lucide-react';
+import maltaPoster from '../images/malta_poster.jpg';
+import lithuaniaPoster from '../images/lithuania_poster.jpg';
+import koreaPoster from '../images/korea_poster.jpg';
+import germanyPoster from '../images/germany_poster.jpg';
+import ukBoy from '../images/uk_boy.jpg';
+import spainPoster from '../images/spain_poster.jpg';
+import canadaPosterNew from '../images/canada_poster_new.jpg';
 
 const Destinations = () => {
   const destinations = [
     {
       country: 'United Kingdom',
       flag: '🇬🇧',
-      image: 'https://images.pexels.com/photos/460672/pexels-photo-460672.jpeg?auto=compress&cs=tinysrgb&w=800',
-      description: 'Home to world-renowned universities with rich academic traditions and excellent research opportunities.',
+      image: ukBoy,
+      description: 'Gain a world-class education, experience diverse culture, and open doors to global opportunities.',
       highlights: [
-        'World-class universities like Oxford and Cambridge',
-        'Rich cultural heritage and history',
-        'Post-study work visa opportunities',
-        'Gateway to Europe',
-        'English-speaking environment'
+        'High Employability',
+        'Advanced Research Facilities',
+        'Flexible Study Options',
+        'Scholarships and Financial Support',
+        'World-Class Education',
+        'Global Community'
       ],
       universities: [
         'University of Oxford',
@@ -78,16 +86,43 @@ const Destinations = () => {
       duration: '1-4 years depending on program'
     },
     {
+      country: 'Spain',
+      flag: '🇪🇸',
+      image: spainPoster,
+      description: 'Quality education, affordable tuition, and the chance to explore Europe. Study in a vibrant and historic setting.',
+      highlights: [
+        'Quality education',
+        'Affordable tuition (€7,000 for 2nd class upper)',
+        'Flexible payment: 50% before visa',
+        'Explore Europe (Schengen Area)',
+        'Rich cultural experience'
+      ],
+      universities: [
+        'Top Business Schools',
+        'Technical Universities',
+        'Arts & Design Schools'
+      ],
+      requirements: [
+        'High School/Bachelor Degree',
+        'Valid Passport',
+        'Statement of Purpose',
+        'Proof of Funds'
+      ],
+      workRights: 'Internship opportunities available',
+      avgCost: '€7,000 (Tuition)',
+      duration: '1-2 Years (Masters/MBA)'
+    },
+    {
       country: 'Canada',
       flag: '🇨🇦',
-      image: 'https://images.pexels.com/photos/374870/pexels-photo-374870.jpeg?auto=compress&cs=tinysrgb&w=800',
-      description: 'Welcoming country with high-quality education and excellent immigration pathways.',
+      image: canadaPosterNew,
+      description: 'Welcoming country with high-quality education and excellent immigration pathways. Transform your dreams!',
       highlights: [
-        'Pathway to permanent residency',
-        'High quality of life',
-        'Multicultural society',
-        'Affordable education',
-        'Work opportunities during and after studies'
+        'Quality Education',
+        'Affordable Cost',
+        'Multicultural Environment',
+        'Earn While You Learn',
+        'Pathway to permanent residency'
       ],
       universities: [
         'University of Alberta',
@@ -144,23 +179,21 @@ const Destinations = () => {
     {
       country: 'Germany',
       flag: '🇩🇪',
-      image: 'https://images.pexels.com/photos/109629/pexels-photo-109629.jpeg?auto=compress&cs=tinysrgb&w=800',
-      description: 'Excellence in engineering and research with many programs offered at low or no tuition fees.',
+      image: germanyPoster,
+      description: 'Excellence in engineering and research with many programs offered at low or no tuition fees. Partnered with Global University Systems.',
       highlights: [
         'Low or no tuition fees',
         'Strong engineering programs',
         'Research opportunities',
         'Central location in Europe',
-        'Post-graduation work opportunities'
+        '65% International Students Unemployment Rate',
+        '469K International Students in Germany'
       ],
       universities: [
+        'University of Europe for Applied Sciences',
         'Heidelberg University',
         'RWTH Aachen University',
-        'Humboldt University',
-        'University of Mannheim',
         'Technical University of Munich',
-        'University of Cologne',
-        'Frankfurt University'
       ],
       requirements: [
         'TestDaF or DSH for German programs',
@@ -172,6 +205,86 @@ const Destinations = () => {
       workRights: '120 full days or 240 half days per year',
       avgCost: '€0 - €20,000 per year (public universities)',
       duration: '1-4 years depending on program'
+    },
+    {
+      country: 'Malta',
+      flag: '🇲🇹',
+      image: maltaPoster,
+      description: 'Start your journey to Europe with an exciting 1-Year Diploma in Healthcare or Hospitality.',
+      highlights: [
+        'Affordable tuition: €6,200',
+        'Pay 50% on admission, 50% after visa approval',
+        'Job Guarantee After Graduation',
+        'Free housing & meals provided',
+        'Chance to move to Germany or the U.K. later',
+        'No age limit',
+        'Dependents can join once you start working'
+      ],
+      universities: [
+        'Partner Institutions in Malta'
+      ],
+      requirements: [
+        'High School Diploma or equivalent',
+        'English proficiency',
+        'Valid Passport',
+        'CV/Resume'
+      ],
+      workRights: 'Direct job offer from partner company after graduation',
+      avgCost: '€6,200 (Tuition)',
+      duration: '1 Year Diploma'
+    },
+    {
+      country: 'Lithuania',
+      flag: '🇱🇹',
+      image: lithuaniaPoster,
+      description: 'A Schengen country offering endless possibilities. Take your education to the next level in a safe and peaceful environment.',
+      highlights: [
+        'Schengen Visa Access',
+        'Work Opportunities',
+        'Safe and Peaceful Environment',
+        'Affordable living costs',
+        'High quality education'
+      ],
+      universities: [
+        'Vilnius University',
+        'Kaunas University of Technology',
+        'Other Top Universities'
+      ],
+      requirements: [
+        'High School Certificate',
+        'Passport',
+        'English Proficiency (if applicable)'
+      ],
+      workRights: '20 hours/week during studies, full time during breaks',
+      avgCost: '€3,000 - €6,000 per year',
+      duration: '3-4 Years (Bachelor)'
+    },
+    {
+      country: 'South Korea',
+      flag: '🇰🇷',
+      image: koreaPoster,
+      description: 'Experience a safe, modern environment with affordable tuition and friendly atmosphere for international students.',
+      highlights: [
+        'Expanded maximum working hours for students',
+        'Friendly to international students',
+        'Safe and modern environment',
+        'Affordable tuition',
+        'Scholarship opportunities'
+      ],
+      universities: [
+        'Seoul National University',
+        'Korea University',
+        'Yonsei University',
+        'Other Leading Institutions'
+      ],
+      requirements: [
+        'Academic Transcripts',
+        'Language Proficiency (Korean/English)',
+        'Bank Statement'
+      ],
+      workRights: 'Expanded working hours allowed for students',
+      avgCost: '$3,000 - $6,000 per semester',
+      duration: '4 Years (Bachelor)'
     }
   ];
 
@@ -234,11 +347,11 @@ const Destinations = () => {
           <div className="space-y-16">
             {destinations.map((destination, index) => (
               <div key={index} className={`grid grid-cols-1 lg:grid-cols-2 gap-8 items-center ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}>
-                <div className={`${index % 2 === 1 ? 'lg:col-start-2' : ''}`}>
+                <div className={`${index % 2 === 1 ? 'lg:col-start-2' : ''} bg-gray-50 rounded-lg overflow-hidden`}>
                   <img
                     src={destination.image}
                     alt={destination.country}
-                    className="w-full h-64 lg:h-80 object-cover rounded-lg shadow-lg"
+                    className="w-full h-80 lg:h-96 object-contain shadow-sm"
                   />
                 </div>
                 <div className={`${index % 2 === 1 ? 'lg:col-start-1' : ''}`}>

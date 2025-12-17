@@ -1,16 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { 
-  GraduationCap, 
-  FileText, 
-  DollarSign, 
-  BookOpen, 
-  Plane, 
-  Users, 
+import {
+  GraduationCap,
+  FileText,
+  DollarSign,
+  BookOpen,
+  Plane,
+  Users,
   Globe,
   CheckCircle,
   Clock,
-  Award
+  Award,
+  Video
 } from 'lucide-react';
 
 const Services = () => {
@@ -63,6 +64,7 @@ const Services = () => {
       features: [
         'IELTS preparation and coaching',
         'TOEFL test preparation',
+        'SAT Preparation classes',
         'GRE and GMAT prep courses',
         'Duolingo English Test guidance',
         'Practice tests and mock exams',
@@ -139,6 +141,20 @@ const Services = () => {
         'Employer networking opportunities'
       ],
       price: 'Consultation required'
+    },
+    {
+      icon: <Video className="h-12 w-12" />,
+      title: 'International Film Festival Linkages',
+      description: 'We provide unique opportunities and direct linkages for aspiring filmmakers and artists to participate in international film festivals.',
+      features: [
+        'Festival submission assistance',
+        'Networking opportunities with global filmmakers',
+        'Guidance on festival requirements',
+        'Portfolio review and enhancement',
+        'Travel and accommodation arrangements for festivals',
+        'Exposure to international markets'
+      ],
+      price: 'Consultation required'
     }
   ];
 
@@ -168,7 +184,7 @@ const Services = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section 
+      <section
         className="relative py-20 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://images.pexels.com/photos/1438081/pexels-photo-1438081.jpeg?auto=compress&cs=tinysrgb&w=1600)'
@@ -198,7 +214,7 @@ const Services = () => {
                 <div className="text-green-600 mb-4">{service.icon}</div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">{service.title}</h3>
                 <p className="text-gray-600 mb-4">{service.description}</p>
-                
+
                 <div className="mb-4">
                   <h4 className="font-medium text-gray-900 mb-2">What's Included:</h4>
                   <ul className="space-y-1">
@@ -210,7 +226,7 @@ const Services = () => {
                     ))}
                   </ul>
                 </div>
-                
+
                 <div className="border-t pt-4">
                   <div className="flex justify-between items-center">
                     <span className="font-semibold text-green-600">{service.price}</span>
